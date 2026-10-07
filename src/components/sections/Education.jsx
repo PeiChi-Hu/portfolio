@@ -1,7 +1,5 @@
 import Container from '../ui/Container.jsx';
-import FlowDiagram from '../ui/FlowDiagram.jsx';
 import Reveal from '../ui/Reveal.jsx';
-import { TagList } from '../ui/TechTag.jsx';
 
 export default function Education() {
   return (
@@ -20,37 +18,11 @@ export default function Education() {
               Coursework: Advanced Computer Vision · Learning for 3D · Intro to Robot Learning
             </p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:col-span-8">
-            <div id="cmu-3d" className="rounded-[20px] border border-line bg-paper p-5 sm:p-6">
-              <p className="eyebrow text-accent">Learning for 3D</p>
-              <p className="mt-2 text-[0.95rem] leading-relaxed text-ink/85">
-                Single-view 3D reconstruction with neural implicit decoders.
-              </p>
-              <FlowDiagram
-                className="mt-4"
-                direction="vertical"
-                compact
-                steps={[
-                  { label: 'Single view' },
-                  { label: 'Neural implicit representation', tone: 'accent' },
-                  { label: 'Continuous 3D occupancy' },
-                ]}
-                ariaLabel="Single view to neural implicit representation to continuous 3D occupancy"
-              />
-              <TagList className="mt-4" tone="quiet" items={['PyTorch', 'PyTorch3D']} />
-            </div>
-            <div id="cmu-rl" className="rounded-[20px] border border-line bg-paper p-5 sm:p-6">
-              <p className="eyebrow text-accent">Robot learning</p>
-              <p className="mt-2 text-[0.95rem] leading-relaxed text-ink/85">
-                Training and evaluating neural control policies in simulation. Built a DAgger pipeline to counter
-                distribution shift in continuous control.
-              </p>
-              <ul className="mt-4 space-y-2 text-[0.9rem] text-ink/85">
-                <li className="rounded-lg border border-line bg-white px-3 py-2">Policy gradient · GAE</li>
-                <li className="rounded-lg border border-line bg-white px-3 py-2">Imitation learning · DAgger</li>
-              </ul>
-              <TagList className="mt-4" tone="quiet" items={['PyTorch', 'MuJoCo', 'Gymnasium']} />
-            </div>
+          <div className="lg:col-span-8 lg:flex lg:items-start lg:justify-between lg:gap-8">
+            <p className="text-[0.95rem] leading-relaxed text-mute">
+              Graduate coursework in 3D vision, computer vision and robot learning — assignments, results and findings are
+              in <a href="#coursework" className="font-medium text-accent hover:underline">CMU Coursework</a>.
+            </p>
           </div>
         </Reveal>
 

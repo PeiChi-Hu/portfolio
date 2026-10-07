@@ -15,7 +15,7 @@ export const navLinks = [
   { id: 'path', label: 'Path' },
   { id: 'work', label: 'Selected Work' },
   { id: 'production', label: 'Production' },
+  { id: 'coursework', label: 'Coursework' },
   { id: 'projects', label: 'Projects' },
   { id: 'skills', label: 'Skills' },
-  { id: 'education', label: 'Education' },
 ];

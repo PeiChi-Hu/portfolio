@@ -1,4 +1,5 @@
 import { MotionConfig } from 'framer-motion';
+import Coursework from './components/sections/Coursework.jsx';
 import Education from './components/sections/Education.jsx';
 import ExperiencePath from './components/sections/ExperiencePath.jsx';
 import FooterCTA from './components/sections/FooterCTA.jsx';
@@ -24,6 +25,7 @@ export default function App() {
         <ExperiencePath />
         <Work />
         <ProductionEngineering />
+        <Coursework />
         <Projects />
         <RoboticsStack />
         <Education />

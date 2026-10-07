@@ -61,7 +61,13 @@ Shorter problems from FARobot, each solved by finding what the system was actual
 
 **[AMR Control Stack & Digital Twin](https://peichi-hu.github.io/portfolio/#project-amr)** — ROS navigation to STM32 real-time motor control, with a Gazebo digital twin for validation before hardware.
 
-**Carnegie Mellon coursework** — single-view 3D reconstruction with neural implicit decoders (PyTorch3D); policy gradient, GAE and a DAgger pipeline for continuous control (MuJoCo, Gymnasium).
+## CMU coursework
+
+[Read the coursework section →](https://peichi-hu.github.io/portfolio/#coursework)
+
+- **16-825 Learning for 3D** — single-view reconstruction as voxels, point clouds and meshes in PyTorch3D (best F1@0.05: 73.0 with point clouds); a Chamfer-weighting ablation exposing the precision / recall trade-off; multi-class training raised chair F1 to 76.2.
+- **16-820 Advanced Computer Vision** — HOG features from scratch (29.5% → 42.3% over raw pixels on Imagenette, 3× smaller with SVD at no accuracy cost); a NumPy neural network, autoencoder and VAE (76.8% on 36-class NIST36).
+- **16-831 Introduction to Robot Learning** — behavior cloning vs. DAgger on MuJoCo (DAgger lifts Hopper from 24% of expert to expert level); policy gradients with reward-to-go, value baselines and GAE.
 
 ## Education
 

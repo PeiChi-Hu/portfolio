@@ -7,7 +7,7 @@ const linkLabel = {
   case: 'Selected work',
   production: 'Production engineering',
   project: 'Project',
-  cmu: 'CMU',
+  cmu: 'CMU coursework',
 };
 
 const stages = [
@@ -64,8 +64,9 @@ const stages = [
     where: 'Carnegie Mellon University',
     now: true,
     items: [
-      { t: 'Single-view 3D reconstruction', d: 'Neural implicit decoders predicting continuous occupancy, in PyTorch3D.', href: '#cmu-3d', kind: 'cmu' },
-      { t: 'Robot learning in simulation', d: 'Policy gradient and GAE; a DAgger pipeline to counter distribution shift in continuous control.', href: '#cmu-rl', kind: 'cmu' },
+      { t: 'Single-view 3D reconstruction', d: 'Voxel, point-cloud and mesh prediction from one image in PyTorch3D; point clouds best at F1 73.0, a Chamfer-weighting ablation on precision vs. recall.', href: '#cmu-3d', kind: 'cmu' },
+      { t: 'Vision and neural networks from first principles', d: 'HOG features from scratch (29.5% → 42.3% over raw pixels) and a NumPy network, autoencoder and VAE.', href: '#cmu-cv', kind: 'cmu' },
+      { t: 'Imitation and reinforcement learning', d: 'DAgger lifts Hopper from 24% of expert under behavior cloning to expert level; policy gradients with GAE.', href: '#cmu-rl', kind: 'cmu' },
     ],
   },
 ];
