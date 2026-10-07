@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+  body {
+    @apply bg-paper text-ink font-sans;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+  ::selection { background: rgba(0, 98, 196, 0.16); }
+  [id] { scroll-margin-top: 5rem; }
+
+  :focus { outline: none; }
+  :focus-visible {
+    outline: 2px solid #0062C4;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-faint;
+  }
+  .display-xl {
+    @apply font-semibold tracking-tightest text-ink;
+    font-size: clamp(2.6rem, 7.4vw, 6.25rem);
+    line-height: 1.02;
+  }
+  .display-lg {
+    @apply font-semibold tracking-tightest text-ink;
+    font-size: clamp(2.1rem, 5.4vw, 4.5rem);
+    line-height: 1.05;
+  }
+  .display-md {
+    @apply font-semibold tracking-tight text-ink;
+    font-size: clamp(1.7rem, 3.6vw, 2.9rem);
+    line-height: 1.1;
+  }
+  .lede {
+    @apply text-mute;
+    font-size: clamp(1.08rem, 1.6vw, 1.32rem);
+    line-height: 1.55;
+  }
+  .node {
+    @apply rounded-xl border border-line bg-white px-4 py-3 text-center shadow-soft;
+  }
+}
